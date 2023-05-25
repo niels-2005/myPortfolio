@@ -1,0 +1,60 @@
+.navbar {
+  background-color: #141D2F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  .navbar-left{
+    margin-left: 75px;
+    span{
+      font-size: 32px;
+      color: white;
+      font-weight: 800;
+    }
+  }
+  .navbar-right-links {
+    margin-right: 75px;
+    a {
+      font-size: 24px;
+      text-decoration: none;
+      color: white;
+      margin-left: 40px;
+      position: relative;
+      overflow: hidden;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #4B47FF;  /* Update this to change the underline color */
+        transition: width 0.2s ease-in-out;
+      }
+      &:hover {
+        color: #00BEE8;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//   .navbar-right-links{
+//     margin-right: 75px;
+//     a {
+//       font-size: 24px;
+//       text-decoration: none;
+//       color: white;
+//       margin-left: 40px;
+//       transition: 0.1s ease;
+//       &:hover{
+//         color: #00BEE8;
+//       }
+//     }
+//   }
+// }
