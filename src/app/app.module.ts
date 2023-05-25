@@ -9,6 +9,7 @@ import { IconsEmailComponent } from './icons-email/icons-email.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioHeadComponent } from './portfolio-head/portfolio-head.component';
+import { JoinComponent } from './join/join.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PortfolioHeadComponent } from './portfolio-head/portfolio-head.componen
     IconsEmailComponent,
     AboutMeComponent,
     SkillsComponent,
-    PortfolioHeadComponent
+    PortfolioHeadComponent,
+    JoinComponent
   ],
   imports: [
     BrowserModule,

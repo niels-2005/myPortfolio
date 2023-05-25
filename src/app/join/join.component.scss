@@ -1,0 +1,73 @@
+.portfolio-join-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141D2F;
+  gap: 100px;
+}
+
+.join-laptop{
+  img{
+    height: 450px;
+  }
+}
+
+.join-informations{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+  h2{
+    color: #4B47FF;
+    font-size: 56px;
+    margin: 0;
+  }
+  p{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+  }
+  span{
+    color: #00BEE8;
+    font-size: 32px;
+  }
+}
+
+.join-button-container{
+  margin-top: 20px;
+  display: flex;
+  gap: 100px;
+}
+
+.live-test-button {
+  background-color: #4B47FF;
+  border-style: unset;
+  width: 175px;
+  height: 60px;
+  padding: 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.1s ease;
+  &:hover{
+    background-color: #00BEE8;
+  }
+}
+
+.github-button{
+  background-color: #141D2F;
+  border-style: unset;
+  border: 1px solid #00BEE8;
+  width: 175px;
+  height: 60px;
+  padding: 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.1s ease;
+  &:hover{
+    background-color: #00BEE8;
+  }
+}
