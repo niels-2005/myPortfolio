@@ -21,6 +21,8 @@
   align-items: center;
   gap: 10px;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
   .skill-image, .skill-span {
     transition: transform 0.3s ease-in-out;
 }
@@ -80,7 +82,7 @@
 }
 
 .purple-line{
-  margin-top: 70px;
+  margin-top: 80px;
   height: 5px;
   width: 200px;
   background-color: #4B47FF;
@@ -94,6 +96,8 @@
   align-items: center;
   gap: 10px;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
   span{
     text-align: center;
     color: white;
