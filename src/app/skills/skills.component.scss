@@ -1,1 +1,120 @@
+.skill-container {
+  background-color: #141D2F;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 85px;
+  padding-bottom: 200px;
+}
+
+.icon-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 150px;
+  padding-right: 200px;
+}
+
+.icon{
+  width: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  .skill-image, .skill-span {
+    transition: transform 0.3s ease-in-out;
+}
+  span{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  &:hover {
+    .skill-image {
+        transform: translateY(100%);
+    }
+    .skill-span {
+        transform: translateY(-200%);
+    }
+}
+}
+
+.skills-font-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-right: 100px;
+  h1{
+    color: white;
+    font-size: 84px;
+    margin: 0;
+  }
+  span{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.button-container{
+  height: 70px;
+  margin-top: 20px;
+  button{
+    background-color: #00BEE8;
+    border-style: unset;
+    width: 175px;
+    height: 60px;
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    &:hover{
+      width: 185px;
+      height: 70px;
+      background-color: #4B47FF;
+  }}
+}
+
+.purple-line{
+  margin-top: 70px;
+  height: 5px;
+  width: 200px;
+  background-color: #4B47FF;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.material-design-animation {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  span{
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  img {
+    transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    img {
+        transform: translateY(100%);
+    }
+    span {
+        transform: translateY(-150%);
+    }
+  }
+}
+
+
+
+
 
