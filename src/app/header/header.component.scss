@@ -1,14 +1,16 @@
 .header-container{
+  padding-top: 100px;
   display: flex;
   background-color: #141D2F;
   align-items: center;
+  padding-bottom: 20px;
   .my-image-container{
     position: relative;
    .my-image{
     position: relative;
     z-index: 1;
     left: 50px;
-    top: 30px;
+    top: 10px;
     height: 700px;
    }
    .header-purple-shadow{
@@ -51,6 +53,7 @@
       }
     }
     .button-container{
+      height: 1px;
       margin-top: 50px;
       position: relative;
       button{
@@ -64,7 +67,6 @@
         font-size: 24px;
         cursor: pointer;
         transition: 0.1s ease;
-
         &:hover{
           width: 185px;
           height: 70px;
