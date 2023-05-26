@@ -12,6 +12,8 @@ import { PortfolioHeadComponent } from './portfolio-head/portfolio-head.componen
 import { JoinComponent } from './join/join.component';
 import { ElPolloLocoComponent } from './el-pollo-loco/el-pollo-loco.component';
 import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

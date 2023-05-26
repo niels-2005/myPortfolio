@@ -14,7 +14,8 @@
   z-index: 11000;
   height: 800px;
   top: 750px;
-  right: -450px;
+  right: -450px !important;
+  overflow-x: hidden !important;
 }
 
 .about-me-text-container{
