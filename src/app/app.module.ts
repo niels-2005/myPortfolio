@@ -10,6 +10,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioHeadComponent } from './portfolio-head/portfolio-head.component';
 import { JoinComponent } from './join/join.component';
+import { ElPolloLocoComponent } from './el-pollo-loco/el-pollo-loco.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { JoinComponent } from './join/join.component';
     AboutMeComponent,
     SkillsComponent,
     PortfolioHeadComponent,
-    JoinComponent
+    JoinComponent,
+    ElPolloLocoComponent
   ],
   imports: [
     BrowserModule,
