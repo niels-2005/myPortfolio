@@ -11,6 +11,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioHeadComponent } from './portfolio-head/portfolio-head.component';
 import { JoinComponent } from './join/join.component';
 import { ElPolloLocoComponent } from './el-pollo-loco/el-pollo-loco.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ElPolloLocoComponent } from './el-pollo-loco/el-pollo-loco.component';
     SkillsComponent,
     PortfolioHeadComponent,
     JoinComponent,
-    ElPolloLocoComponent
+    ElPolloLocoComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

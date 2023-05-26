@@ -1,0 +1,18 @@
+.contact-headline-container{
+  display: flex;
+  align-items: center;
+  background-color: #141D2F;
+  h1{
+    color: white;
+    font-size: 84px;
+    font-weight: 900;
+  }
+}
+
+.purple-line{
+  height: 5px;
+  width: 95px;
+  background-color: #4B47FF;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
