@@ -1,4 +1,4 @@
-<div class="contact-headline-container">
+<div class="contact-headline-container" id="contact-section">
   <div class="purple-line"></div>
   <h1>Contact</h1>
 </div>
@@ -64,12 +64,31 @@
       class="contact-button send-button"
       #sendButton
       type="submit"
-      [ngClass]="{ sent: emailSent }"
+      [ngClass]="{ sent: emailSent, 'd-none': addClassToButton }"
     >
       <span class="message" *ngIf="!emailSent">Send Message</span>
-      <span *ngIf="emailSent && showSpanMsg"
-        >Your email has been sent successfully!</span
-      >
     </button>
+    <div class="message-sent-container">
+      <span class="message-sent" *ngIf="emailSent && showSpanMsg">
+        Your email has been sent successfully!</span
+      >
+    </div>
   </form>
+  <img
+    class="contact-purple-shadow"
+    src="/assets/img/shadows/blue-shadow4.png"
+  />
+</div>
+
+<div class="scroll-up-container">
+  <img
+    (click)="navigateToSection()"
+    src="/assets/img/icons/go-up-button-white.png"
+    class="img1"
+  />
+  <img
+    (click)="navigateToSection()"
+    src="/assets/img/icons/go-up-button-blue.png"
+    class="img2"
+  />
 </div>

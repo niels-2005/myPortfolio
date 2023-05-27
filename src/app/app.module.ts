@@ -13,7 +13,8 @@ import { JoinComponent } from './join/join.component';
 import { ElPolloLocoComponent } from './el-pollo-loco/el-pollo-loco.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
-import {ReactiveFormsModule} from '@angular/forms'
+import {ReactiveFormsModule} from '@angular/forms';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {ReactiveFormsModule} from '@angular/forms'
     PortfolioHeadComponent,
     JoinComponent,
     ElPolloLocoComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

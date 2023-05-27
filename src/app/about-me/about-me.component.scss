@@ -3,17 +3,17 @@
   z-index: 10000;
   display: flex;
   justify-content: space-between;
-  margin-top: 75px;
+  padding-top: 200px;
   padding-left: 95px;
-  background: linear-gradient(to bottom, #141F31, #141D2F);
-  padding-bottom: 300px;
+  background: linear-gradient(to bottom, #141F31 5%, #141D2F 10%);
+  padding-bottom: 200px;
 }
 
 .about-me-purple-shadow{
   position: absolute;
   z-index: 11000;
   height: 800px;
-  top: 750px;
+  top: 775px;
   right: -450px !important;
   overflow-x: hidden !important;
 }
@@ -84,7 +84,7 @@
   z-index: 1;
   img {
     width: 100%;
-    height: 100%;
+    height: 130%;
     object-fit: cover;
   }
 }
@@ -99,3 +99,4 @@
     background-color: #00BEE8;
     z-index: 0;
 }
+

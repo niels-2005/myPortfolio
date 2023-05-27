@@ -7,6 +7,13 @@ import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  navigateToSection() {
+    const section = document.getElementById('header-section');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
@@ -27,6 +34,8 @@ export class ContactComponent implements OnInit {
   emailSent = false;
   showSpanMsg = false;
 
+  addClassToButton = false;
+
   target!: HTMLInputElement;
 
   constructor() {}
@@ -37,7 +46,8 @@ export class ContactComponent implements OnInit {
     this.emailSent = true;
     setTimeout(() => {
       this.showSpanMsg = true;
-    }, 2000);
+      this.addClassToButton = true;
+    }, 800);
     let nameField = this.nameField.nativeElement;
     let emailField = this.nameField.nativeElement;
     let messageField = this.nameField.nativeElement;

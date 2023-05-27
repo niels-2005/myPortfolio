@@ -5,13 +5,14 @@
 
 .curved-background{
   width: 100vw;
-  width: 100%;
   position: absolute;
-  top: 575px;
+  top: 235px;
+  left: -5px;
   z-index: 100;
 }
 
 .icon-email-container-left {
+  margin-top: -90px;
   position: relative;
   z-index: 150;
   display: flex;
@@ -39,7 +40,7 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: #4B47FF;  /* Update this to change the underline color */
+      background: #4B47FF;
       transition: width 0.2s ease-in-out;
     }
     &:hover {
@@ -70,7 +71,7 @@
 
 .scroll-down-container{
   position: relative;
-  z-index: 2000;
+  z-index: 20000;
   display: flex;
   gap: 75px;
   flex-direction: column;
@@ -79,12 +80,17 @@
     display: flex;
     font-size: 32px;
     color: white;
-    transform: rotate(90deg) translateX(-50px);
+    transform: rotate(90deg) translateX(-80px) translateY(-4px);
   }
   img{
     height: 20px;
     object-fit: contain;
-    transform: translateY(-60px) translateX(-4px);
-
+    animation: upAndDown 2s ease-in-out infinite;
   }
+}
+
+@keyframes upAndDown {
+  0% { transform: translateY(-70px);  }
+  50% { transform: translateY(-90px); }
+  100% { transform: translateY(-70px); }
 }

@@ -7,6 +7,13 @@ import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 })
 export class SkillsComponent implements OnInit, AfterViewInit, OnDestroy {
 
+  navigateToSection() {
+    const section = document.getElementById('contact-section');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   private scrollHandler!: () => void;
   private isAnimating = false;
   private isInView = false;

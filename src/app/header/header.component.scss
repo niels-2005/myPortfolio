@@ -1,5 +1,5 @@
 .header-container{
-  padding-top: 100px;
+  padding-top: 50px;
   display: flex;
   background-color: #141D2F;
   align-items: center;
@@ -10,19 +10,20 @@
     position: relative;
     z-index: 1;
     left: 50px;
-    top: 10px;
-    height: 700px;
+    top: 50px;
+    height: 800px;
+    object-fit: cover;
    }
    .header-purple-shadow{
     position: absolute;
-    left: -100px;
+    left: -90px;
     top: 100px;
     height: 900px;
    }
    .header-turkis-shadow{
     position: absolute;
-    right: -150px;
-    top: 90px;
+    right: -180px;
+    top: 140px;
    }
   }
   .performance-container{
@@ -56,6 +57,7 @@
       height: 1px;
       margin-top: 50px;
       position: relative;
+      z-index: 1000;
       button{
         background-color: #00BEE8;
         border-style: unset;
