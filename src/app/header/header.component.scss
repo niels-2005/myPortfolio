@@ -31,15 +31,15 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 100px;
-    margin-left: 250px;
+    margin-left: 200px;
     .performance-container-font{
       display: flex;
       align-items: center;
       span{
-        display: inline-block;
+        display: flex;
         color: white;
         transform: rotate(-90deg);
-        font-size: 74px;
+        font-size: 70px;
       }
       h1{
         margin: 0;
@@ -55,7 +55,7 @@
     }
     .button-container{
       height: 1px;
-      margin-top: 50px;
+      margin-top: 25px;
       position: relative;
       z-index: 1000;
       button{
@@ -77,4 +77,8 @@
       }
     }
   }
+}
+
+.my-name-and-job-container{
+  margin-left: -10px;
 }
