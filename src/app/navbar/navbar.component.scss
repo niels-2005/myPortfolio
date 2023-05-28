@@ -13,6 +13,7 @@
   .navbar-left{
     margin-left: 65px;
     span{
+      cursor: pointer;
       font-size: 32px;
       color: white;
       font-weight: 800;
@@ -20,7 +21,7 @@
   }
   .navbar-right-links {
     margin-right: 75px;
-    a {
+    .links {
       font-size: 24px;
       text-decoration: none;
       color: white;

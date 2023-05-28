@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  navigateToSection() {
+    const section = document.getElementById('header-section');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }

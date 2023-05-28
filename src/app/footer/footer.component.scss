@@ -1,7 +1,7 @@
 .footer{
   border-top: 4px solid #00BEE8;
   background-color: #141D2F;
-  padding: 100px;
+  padding: 75px;
   position: relative;
   z-index: 100;
   display: flex;
@@ -12,13 +12,15 @@
 .footer-left{
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
   span{
+    font-weight: 800;
     color: white;
     font-size: 36px;
+    cursor: pointer;
   }
   a {
-    font-size: 24px;
+    font-size: 32px;
     text-decoration: none;
     color: white;
     position: relative;
@@ -36,14 +38,14 @@
     &:hover {
       color: #00BEE8;
       &::after {
-        width: 95%;
+        width: 100%;
       }
     }
   }
 }
 
 .footer-middle{
-  font-size: 36px;
+  font-size: 32px;
   color: white;
 }
 

@@ -1,12 +1,19 @@
 <nav class="navbar">
   <div class="navbar-content">
     <div class="navbar-left">
-      <span>Niels</span>
+      <span routerLink="/" (click)="navigateToSection()"
+        >N<span style="color: #00bee8">i</span>el<span style="color: #4b47ff"
+          >s</span
+        ></span
+      >
     </div>
     <div class="navbar-right-links">
-      <a href="#about-me">About me</a>
-      <a href="#skills-section">Skills</a>
-      <a href="#portfolio-section">Portfolio</a>
+      <a class="links" *ngIf="!imprintSite" href="#about-me">About me</a>
+      <a class="links" *ngIf="!imprintSite" href="#skills-section">Skills</a>
+      <a class="links" *ngIf="!imprintSite" href="#portfolio-section"
+        >Portfolio</a
+      >
+      <a class="links" *ngIf="imprintSite" routerLink="/">Home</a>
     </div>
   </div>
 </nav>

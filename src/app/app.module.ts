@@ -14,7 +14,9 @@ import { ElPolloLocoComponent } from './el-pollo-loco/el-pollo-loco.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { StartsiteContentComponent } from './startsite-content/startsite-content.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FooterComponent } from './footer/footer.component'
     JoinComponent,
     ElPolloLocoComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ImprintComponent,
+    StartsiteContentComponent
   ],
   imports: [
     BrowserModule,
