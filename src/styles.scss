@@ -9,4 +9,51 @@ body {
   background-color: #141D2F;
 }
 
+@media(max-width: 1566px){
+  h1{
+    font-size: 64px !important;
+  }
+}
 
+@media(max-width: 1125px){
+  h1{
+    font-size: 50px !important;
+  }
+}
+
+
+@media(max-width: 1380px){
+ p {
+  font-size: 18px !important;
+ }
+ span {
+  font-size: 18px !important;
+ }
+}
+
+@media(max-width: 700px){
+p {
+  font-size: 16px !important;
+}
+span {
+  font-size: 16px !important;
+}
+}
+
+@media(max-width: 640px){
+  h1{
+    font-size: 46px !important;
+  }
+}
+
+@media(max-width: 475px){
+  h1{
+    font-size: 40px !important;
+  }
+}
+
+@media(max-width: 370px){
+  h1{
+    font-size: 36px !important;
+  }
+}
