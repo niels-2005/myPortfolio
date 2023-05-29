@@ -127,6 +127,13 @@
 }
 }
 
+@media(max-width: 1294px){
+  .about-me-container {
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+  }
+}
+
 @media (max-width: 1190px){
   .circle-image {
     height: 300px;

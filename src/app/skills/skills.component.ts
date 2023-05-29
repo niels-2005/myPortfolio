@@ -14,62 +14,72 @@ export class SkillsComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  private scrollHandler!: () => void;
-  private isAnimating = false;
-  private isInView = false;
-  private isAnimatingSecond = false;
-  private isInViewSecond = false;
-
   ngOnInit(): void {
+
   }
 
-  ngAfterViewInit(): void {
-    this.scrollHandler = () => {
-      const icons = document.querySelector('.icon-container') as HTMLElement;
-      const text = document.querySelector('.skills-font-container') as HTMLElement;
+private scrollHandler!: () => void;
+private isAnimating = false;
+private isInView = false;
+private isAnimatingSecond = false;
+private isInViewSecond = false;
 
-      if(icons && text) {
-        const position = icons.getBoundingClientRect();
-        const positionSecond = text.getBoundingClientRect();
 
-        const offset = 350;
-        const inView = position.top + offset >= 0 && position.bottom - offset <= window.innerHeight;
-        const inViewSecond = positionSecond.top + offset >= 0 && positionSecond.bottom - offset <= window.innerHeight;
 
-        if(inView && !this.isAnimating && !this.isInView) {
-          this.animateElement(icons);
-          this.isInView = true;
-        } else if (!inView) {
-          this.isInView = false;
-        }
+ngAfterViewInit(): void {
+  this.scrollHandler = () => {
+    const icons = document.querySelector('.icon-container') as HTMLElement;
+    const text = document.querySelector('.skills-font-container') as HTMLElement;
 
-        if(inViewSecond && !this.isAnimatingSecond && !this.isInViewSecond) {
-          this.animateElement(text);
-          this.isInViewSecond = true;
-        } else if (!inViewSecond) {
-          this.isInViewSecond = false;
-        }
+    if(icons && text) {
+      const position = icons.getBoundingClientRect();
+      const positionSecond = text.getBoundingClientRect();
+
+      const offset = 350;
+      const inView = position.top + offset >= 0 && position.bottom - offset <= window.innerHeight;
+      const inViewSecond = positionSecond.top + offset >= 0 && positionSecond.bottom - offset <= window.innerHeight;
+
+      if(inView && !this.isAnimating && !this.isInView) {
+        this.animateElement(icons);
+        this.isInView = true;
+      } else if (!inView) {
+        this.isInView = false;
       }
-    };
 
-    window.addEventListener('scroll', this.scrollHandler);
-  }
+      if(inViewSecond && !this.isAnimatingSecond && !this.isInViewSecond) {
+        this.animateElement(text);
+        this.isInViewSecond = true;
+      } else if (!inViewSecond) {
+        this.isInViewSecond = false;
+      }
+    }
+  };
 
-  ngOnDestroy(): void {
-    window.removeEventListener('scroll', this.scrollHandler);
-  }
-
-  private animateElement(element: HTMLElement) {
-    element.style.animation = 'none';
-    this.isAnimating = true;
-
-    setTimeout(() => {
-      element.style.animation = '';
-      element.style.animationPlayState = 'running';
-
-      element.addEventListener('animationend', () => {
-        this.isAnimating = false;
-      }, {once: true});
-    }, 0);
-  }
+  window.addEventListener('scroll', this.scrollHandler);
 }
+
+ngOnDestroy(): void {
+  window.removeEventListener('scroll', this.scrollHandler);
+}
+
+private animateElement(element: HTMLElement) {
+  element.style.animation = 'none';
+  this.isAnimating = true;
+
+  setTimeout(() => {
+    element.style.animation = '';
+    element.style.animationPlayState = 'running';
+
+    element.addEventListener('animationend', () => {
+      this.isAnimating = false;
+    }, {once: true});
+  }, 0);
+}
+
+
+  }
+
+
+
+
+
