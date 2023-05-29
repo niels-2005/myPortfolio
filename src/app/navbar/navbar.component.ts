@@ -1,16 +1,24 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, AfterViewInit, ViewChild, ElementRef, ViewChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit, AfterViewInit {
 
   @Input() imprintSite = false;
+  @ViewChild('menuToggleInput', { static: false }) menuToggleInput!: ElementRef;
+  @ViewChildren('menuLink') menuLinks!: QueryList<ElementRef>;
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
 
+  ngAfterViewInit(): void {
+    this.menuLinks.forEach((link: ElementRef) => {
+      link.nativeElement.addEventListener('click', () => {
+        this.menuToggleInput.nativeElement.checked = false;
+      });
+    });
   }
 
   navigateToSection() {
@@ -19,5 +27,4 @@ export class NavbarComponent implements OnInit {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   }
-
 }

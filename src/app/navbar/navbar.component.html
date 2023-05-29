@@ -15,5 +15,19 @@
       >
       <a class="links" *ngIf="imprintSite" routerLink="/">Home</a>
     </div>
+    <div id="menuToggle">
+      <input type="checkbox" #menuToggleInput />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu">
+        <a href="#about-me" #menuLink><li>About me</li></a>
+        <a href="#skills-section" #menuLink><li>My Skills</li></a>
+        <a href="#portfolio-section" #menuLink><li>Portfolio</li></a>
+        <a href="#contact-section" #menuLink><li>Contact</li></a>
+      </ul>
+    </div>
   </div>
 </nav>
