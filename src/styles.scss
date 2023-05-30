@@ -13,11 +13,17 @@ body {
   h1{
     font-size: 64px !important;
   }
+  h2 {
+    font-size: 48px !important;
+  }
 }
 
 @media(max-width: 1125px){
   h1{
     font-size: 50px !important;
+  }
+  h2 {
+    font-size: 40px !important;
   }
 }
 
@@ -44,16 +50,42 @@ span {
   h1{
     font-size: 46px !important;
   }
+  h2 {
+    font-size: 30px !important;
+  }
 }
 
 @media(max-width: 475px){
   h1{
     font-size: 40px !important;
   }
-}
+  h2{
+    font-size:  24px !important;
+  }
+  button {
+    width: 130px !important;
+    height: 50px !important;
+    font-size: 18px !important;
+  }
+  p{
+        font-size: 14px !important;
+      }
+  span {
+        font-size: 14px !important;
+      }
+    }
+
+
 
 @media(max-width: 370px){
   h1{
     font-size: 36px !important;
+  }
+  h2{
+    font-size: 20px !important;
+  }
+  button {
+    width: 120px !important;
+    height: 40px !important;
   }
 }

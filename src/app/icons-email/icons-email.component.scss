@@ -79,7 +79,7 @@
   padding-right: 40px;
   span{
     display: flex;
-    font-size: 32px;
+    font-size: 32px !important;
     color: white;
     transform: rotate(90deg) translateX(-80px) translateY(-2px);
   }

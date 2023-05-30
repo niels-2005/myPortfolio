@@ -68,13 +68,15 @@
         padding: 16px;
         border-radius: 8px;
         color: white;
-        font-size: 24px;
         cursor: pointer;
         transition: 0.1s ease;
         &:hover{
           width: 185px;
           height: 70px;
           background-color: #4B47FF;
+        }
+        span{
+          font-size: 24px !important;
         }
       }
     }
@@ -291,6 +293,7 @@
   .performance-container button {
     width: 130px !important;
     height: 50px !important;
+    padding: 10px !important;
   }
   .text {
     font-size: 18px !important;
@@ -331,6 +334,7 @@
   .performance-container button {
     width: 120px !important;
     height: 40px !important;
+    padding: 5px !important;
   }
 }
 
