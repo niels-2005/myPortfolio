@@ -23,10 +23,19 @@
       <span></span>
 
       <ul id="menu">
-        <a href="#about-me" #menuLink><li>About me</li></a>
-        <a href="#skills-section" #menuLink><li>My Skills</li></a>
-        <a href="#portfolio-section" #menuLink><li>Portfolio</li></a>
-        <a href="#contact-section" #menuLink><li>Contact</li></a>
+        <a href="#about-me" *ngIf="!imprintSite" #menuLink><li>About me</li></a>
+        <a href="#skills-section" *ngIf="!imprintSite" #menuLink
+          ><li>My Skills</li></a
+        >
+        <a href="#portfolio-section" *ngIf="!imprintSite" #menuLink
+          ><li>Portfolio</li></a
+        >
+        <a href="#contact-section" *ngIf="!imprintSite" #menuLink
+          ><li>Contact</li></a
+        >
+        <a href="#contact-section" *ngIf="imprintSite" #menuLink
+          ><li>Home</li></a
+        >
       </ul>
     </div>
   </div>

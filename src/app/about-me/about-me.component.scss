@@ -9,15 +9,6 @@
   padding-bottom: 200px;
 }
 
-.about-me-purple-shadow{
-  position: absolute;
-  z-index: 11000;
-  height: 800px;
-  top: 775px;
-  right: -450px !important;
-  overflow-x: hidden !important;
-}
-
 .about-me-text-container{
   display: flex;
   flex-direction: column;
@@ -127,6 +118,7 @@
     width: calc(100% - 500px);
   }
 }
+
 
 @media(max-width: 1380px){
 .about-me-text-container {
