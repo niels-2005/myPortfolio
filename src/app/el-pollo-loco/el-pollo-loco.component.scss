@@ -146,6 +146,12 @@
   }
 }
 
+@media(max-width: 820px){
+  .portfolio-epl-container {
+    padding-bottom: 0px  !important;
+  }
+}
+
 @media(max-width: 800px){
   .portfolio-epl-container{
   margin-left: 50px !important;
