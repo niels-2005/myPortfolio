@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import AOS from "aos";
 
 @Component({
   selector: 'app-contact',
@@ -40,7 +41,9 @@ export class ContactComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    AOS.init();
+  }
 
   async sendMail() {
     this.emailSent = true;

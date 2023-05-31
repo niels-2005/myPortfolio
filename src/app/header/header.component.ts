@@ -1,4 +1,5 @@
-import { Component,  AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component,  OnInit} from '@angular/core';
+import AOS from "aos";
 
 
 @Component({
@@ -6,11 +7,12 @@ import { Component,  AfterViewInit, ElementRef, ViewChild } from '@angular/core'
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements AfterViewInit {
+export class HeaderComponent implements OnInit {
 
-  ngAfterViewInit(): void {
-
+  ngOnInit(): void {
+    AOS.init();
   }
+
 
 
   navigateToSection() {
