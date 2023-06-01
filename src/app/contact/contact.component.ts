@@ -52,8 +52,8 @@ export class ContactComponent implements OnInit {
       this.addClassToButton = true;
     }, 800);
     let nameField = this.nameField.nativeElement;
-    let emailField = this.nameField.nativeElement;
-    let messageField = this.nameField.nativeElement;
+    let emailField = this.emailField.nativeElement;
+    let messageField = this.messageField.nativeElement;
 
     let formData = new FormData();
     formData.append('name', nameField.value);

@@ -54,8 +54,8 @@
   gap: 10px;
   height: 500px;
   .input-bg-warning {
-    background: url('/assets/img/red-alert.png') no-repeat scroll 15px 15px !important;
-    background-position: calc(100% - 15px) 15px !important;
+    background: url('/assets/img/red-alert.png') no-repeat scroll 15px 15px;
+    background-position: calc(100% - 15px) 15px;
 }
   .transparent {
     color: transparent;
@@ -80,7 +80,7 @@ textarea:focus::placeholder {
     color: transparent;
 }
   input{
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
     background-color: #141D2F;
     padding: 16px;
     border-style: unset;
@@ -102,7 +102,7 @@ textarea:focus::placeholder {
   textarea{
     padding: 16px;
     font-size: 20px;
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
     background-color: #141D2F;
     border-style: unset;
     border: 1px solid #4B47FF;
@@ -409,6 +409,16 @@ textarea:focus::placeholder {
   .scroll-up-container {
     padding-right: 50px !important;
   }
+  .input-bg-warning {
+    background: url('/assets/img/red-alert.png') no-repeat scroll 15px 15px !important;
+    background-position: calc(100% - 13px) 13px !important;
+}
+.wrapper {
+  img {
+    right: 14px !important;
+    top: 14px !important;
+  }
+}
 }
 
 @media(max-width: 650px){
@@ -466,6 +476,16 @@ textarea:focus::placeholder {
 }
 
 @media(max-width: 450px){
+  .input-bg-warning {
+    background: url('/assets/img/red-alert.png') no-repeat scroll 15px 15px !important;
+    background-position: calc(100% - 12px) 12px !important;
+}
+.wrapper {
+  img {
+    right: 13px !important;
+    top: 13px !important;
+  }
+}
   .form-container {
     padding-right: 0 !important;
     input {
