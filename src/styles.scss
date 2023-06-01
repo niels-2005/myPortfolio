@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -74,8 +75,6 @@ span {
         font-size: 14px !important;
       }
     }
-
-
 
 @media(max-width: 370px){
   h1{

@@ -139,6 +139,12 @@
   }
 }
 
+@media(max-width: 650px){
+  .purple-line-right {
+    width: 300px !important;
+  }
+}
+
 @media(max-width: 620px){
   .portfolio-middle-container{
     p{
@@ -163,6 +169,12 @@
       padding-left: 30px !important;
       padding-right: 30px !important;
     }
+  }
+}
+
+@media(max-width: 450px){
+  .purple-line-right {
+    width: 175px !important;
   }
 }
 

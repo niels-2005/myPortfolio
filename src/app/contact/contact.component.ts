@@ -60,7 +60,7 @@ export class ContactComponent implements OnInit {
     formData.append('email', emailField.value);
     formData.append('message', messageField.value);
 
-    await fetch('https://niels-scholz.developerakademie.net/send_mail/send_mail.php', {
+    await fetch('https://niels-scholz.com/send_mail/send_mail.php', {
       method: 'POST',
       body: formData
     });
@@ -68,54 +68,54 @@ export class ContactComponent implements OnInit {
 
   onBlur(event: Event) {
     this.target = event.target as HTMLInputElement;
-    this.updateInputClasses();
+    this.checkInputState();
   }
 
 
   onInput(inputType: string) {
-    this.updateInputClasses();
-    this.checkFilledInput(inputType);
-    this.showGreenCheckOnInput(inputType);
+    this.checkInputState();
+    this.checkInputValue(inputType);
+    this.showGreenCheckImage(inputType);
   }
 
 
-  updateInputClasses() {
-    this.target.value.length > 0 ? this.turnInputFieldToGreen() : this.turnInputFieldToRed();
+  checkInputState() {
+    this.target.value.length > 0 ? this.changeInputsGreen() : this.changeInputsRed();
   }
 
 
-  turnInputFieldToGreen() {
+  changeInputsGreen() {
     this.target.classList.add("has-content");
     this.target.classList.remove("empty-focused");
     this.target.classList.remove('input-bg-warning');
   }
 
 
-  turnInputFieldToRed() {
+  changeInputsRed() {
     this.target.classList.remove("has-content");
     this.target.classList.add("empty-focused");
     this.target.classList.add('input-bg-warning');
   }
 
 
-  checkFilledInput(inputType: string) {
-    this.target.value.length > 0 ? this.showRequiredTextOnInput(inputType) : this.hideRequiredTextOnInput(inputType);
+  checkInputValue(inputType: string) {
+    this.target.value.length > 0 ? this.showRequiredMessage(inputType) : this.hideRequiredMessage(inputType);
   }
 
 
-  showRequiredTextOnInput(inputType: string) {
+  showRequiredMessage(inputType: string) {
     let oneInputField = 'showWarning' + inputType.charAt(0).toUpperCase() + inputType.slice(1);
     this[`${oneInputField}`] = false;
   }
 
 
-  hideRequiredTextOnInput(inputType: string) {
+  hideRequiredMessage(inputType: string) {
     let oneInputField = 'showWarning' + inputType.charAt(0).toUpperCase() + inputType.slice(1);
     this[`${oneInputField}`] = true;
   }
 
 
-  showGreenCheckOnInput(inputType: string) {
+  showGreenCheckImage(inputType: string) {
     let oneInputField = 'showGreenCheck' + inputType.charAt(0).toUpperCase() + inputType.slice(1);
     this[`${oneInputField}`] = this.target.value.length > 0;
   }
