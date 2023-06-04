@@ -16,7 +16,8 @@ import { FormsModule } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
-import { StartsiteContentComponent } from './startsite-content/startsite-content.component'
+import { StartsiteContentComponent } from './startsite-content/startsite-content.component';
+import { SimpleCrmComponent } from './simple-crm/simple-crm.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { StartsiteContentComponent } from './startsite-content/startsite-content
     ContactComponent,
     FooterComponent,
     ImprintComponent,
-    StartsiteContentComponent
+    StartsiteContentComponent,
+    SimpleCrmComponent
   ],
   imports: [
     BrowserModule,
